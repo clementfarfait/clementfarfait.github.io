@@ -51,7 +51,10 @@ label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; 
 .center{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, calc(32.5px + -50%)); }
 .title{ font-size: 35px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: center; margin: 0; color: #222; }
 .subtitle{ font-size: 20px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: center; margin: 0; padding-top: 15px; color: #222; width: 400px;}
-.home-img{ width: 25px; padding: 0 15px;}
+.home-img1,.home-img2,.home-img3{ width: 25px; padding: 0 15px;}
+.home-img1{ content: url(ressources/github.png) }
+.home-img2{ content: url(ressources/instagram.png) }
+.home-img3{ content: url(ressources/twitter.png) }
 .img{ display: flex; justify-content: center; align-items: center; float: center; padding-top: 20px;}
 
 /*/ PARAMETRES POUR TELEPHONES OU TRES PETIT ECRAN #fafafa/*/
@@ -80,4 +83,7 @@ label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; 
 	.title,.subtitle,.menu-bouton2,.menu-bouton{ color: #CFCDCD; }
 	.barre,.menu{ background: #2e2e2e; }
 	svg{ fill: #CFCDCD; }
+	.home-img1{ content: url(ressources/github-b.png) }
+	.home-img2{ content: url(ressources/instagram-b.png) }
+	.home-img3{ content: url(ressources/twitter-b.png) }
 }
