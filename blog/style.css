@@ -67,7 +67,7 @@ ul{ padding-left: 0px; }
 	.menu{ display: none; flex-direction: column; background: #fafafa; width: 150px; text-align: center; padding-bottom: 20px; padding-top: 20px; margin-left: calc(100vw - 150px); }
 	.menu-bouton{ font-size: 18px; padding-top: 10px; }
 	.menu-bouton:hover{ text-decoration: underline; }
-	.toggle{ position: relative; display: flex; float: right; justify-content: center; align-items: center; margin-top: 21.5px; cursor: pointer; margin-right: 20px; z-index: 99; }
+	.toggle{ position: relative; display: flex; float: right; justify-content: center; align-items: center; margin-top: 20.5px; cursor: pointer; margin-right: 20px; z-index: 99; }
 	#toggle:checked ~ .head > .menu{ display: flex; }
 	.head{ display: grid; justify-content: normal; }
 	.logo{ display: flex; float:left; padding-top: 22px; z-index: 4; margin-right: 0px; padding-left: 16px;}
