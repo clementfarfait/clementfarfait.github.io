@@ -42,7 +42,7 @@ svg{ fill: black; }
 label,#toggle{ display: none; }
 label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; }
 .menu-bouton{ padding: 0 10px; font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; color: #222; text-decoration: none; border-radius: 3px; }
-.menu-bouton2{ font-size: 18px; font-family: monospace; color: #222; text-decoration: none; border-radius: 3px; font-weight: bold; }
+.menu-bouton2{ font-size: 18px; font-family: monospace; color: #222; text-decoration: none; border-radius: 3px; }
 .menu-bouton:hover{ text-decoration: underline; }
 .barre{ position: fixed; width: 100%; height: 65px; background: #fafafa; z-index: 5; }
 .head{ display: flex; align-items: center; justify-content: center; }
@@ -79,9 +79,9 @@ label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; 
 }
 
 @media (prefers-color-scheme: dark) {
-	body{ background-color: #383838; }
+	body{ background-color: #1F1F1F; }
 	.title,.subtitle,.menu-bouton2,.menu-bouton{ color: #CFCDCD; }
-	.barre,.menu{ background: #2e2e2e; }
+	.barre,.menu{ background: #252525; }
 	svg{ fill: #CFCDCD; }
 	.home-img1{ content: url(ressources/github-b.png) }
 	.home-img2{ content: url(ressources/instagram-b.png) }
