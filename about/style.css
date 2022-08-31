@@ -1,1 +1,91 @@
-/*/ POLICES /*/@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');@font-face { font-family: 'Inter'; font-style:  normal; font-display: auto; font-weight: 400; src: url("../fonts/Inter-Regular.woff2") format("woff2"),url("../fonts/Inter-Regular.woff") format("woff"); }@font-face { font-family: 'Inter'; font-style:  italic; font-display: auto; font-weight: 400; src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("../fonts/Inter-Italic.woff") format("woff"); }@font-face { font-family: 'Inter'; font-style:  normal; font-display: auto; font-weight: 600; src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"); }@font-face { font-family: 'Inter'; font-style:  italic; font-display: auto; font-weight: 600; src: url("../fonts/Inter-MediumItalic.woff2") format("woff2"), url("../fonts/Inter-MediumItalic.woff") format("woff"); }@font-face { font-family: 'Inter'; font-style:  normal; font-display: auto; font-weight: 800; src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"); }@font-face { font-family: 'Inter'; font-style:  italic; font-display: auto; font-weight: 800; src: url("../fonts/Inter-BoldItalic.woff2") format("woff2"), url("../fonts/Inter-BoldItalic.woff") format("woff"); }/*/ ANIMATIONS /*/@keyframes slidein {  from{ transform: translate(-384px, 0px); }  to{ transform: translate(-84px, 0px); }}@keyframes slideout {  0%{ transform: translate(-84px, 0px); }  99%{ transform: translate(-384px, 0px); }  100%{ display: none; }}@keyframes fadeIn {  0% { opacity:0; }  100% { opacity:1; }}@keyframes cursor {  0% { opacity: 0; }  50% { opacity: 1; }  100% { opacity: 0; }}/*/ PARAMETRES DE BASE POUR TOUT ECRAN /*/*{ scroll-behavior: smooth; scroll-margin: 80px; }body{ margin: 0px; padding: 0px; text-rendering: optimizeLegibility; }svg{ fill: black; }.menu{ padding-top: 23px; z-index: 4; }label,#toggle{ display: none; }label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; }.menu-bouton{ padding: 0 10px; font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; color: #222; text-decoration: none; border-radius: 3px; }.menu-bouton2{ font-size: 18px; font-family: monospace; color: #222; text-decoration: none; border-radius: 3px; font-weight: bold; }.menu-bouton:hover{ text-decoration: underline; }.barre{ position: fixed; width: 100%; height: 65px; background: #fafafa; z-index: 5; }.head{ display: flex; align-items: center; justify-content: center; }.logo{ padding-top: 21px; z-index: 4; margin-right: calc(25% - 11px); }.logo-cursor{ display: flex; float:right; margin-top: 2px; width: 10px; height: 1rem; background: red; margin-left: 7.5px; border-radius: 1px; animation: cursor 1s infinite; }.center{ padding-top: 110px; width: 100%; padding-left: 0; }.home-img{ width: 25px; padding: 0 15px;}.img{ display: flex; justify-content: center; align-items: center; float: center; padding-top: 20px;}.about-link{ font-size: 18px; text-decoration: underline; color: #222; }.title{ font-size: 35px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; margin: 0; color: #222; }.subtitle{ font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: justify; margin: 0; padding-top: 25px; color: #222; }li{ font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; margin: 0; padding-top: 5px; color: #222; }hr{ background: #dcdcdc; border: none; height: 1px; margin-top: 40px; }.content{ padding-bottom: 50px; width: calc(190.3px + calc(25% - 11px) + 207px); }/*/ PARAMETRES POUR TELEPHONES OU TRES PETIT ECRAN #fafafa/*/@media all and (min-width: 1px) and (max-width: 575px){	.menu{ display: none; flex-direction: column; background: #fafafa; width: 150px; height: 120px; text-align: center; padding-top: 20px; margin-left: calc(100vw - 150px); }	.menu-bouton{ font-size: 18px; padding-top: 10px; }	.menu-bouton:hover{ text-decoration: underline; }	label{ position: relative; display: flex; float: right; justify-content: center; align-items: center; margin-top: 21.5px; cursor: pointer; margin-right: 20px; z-index: 99; }	#toggle:checked ~ .head > .menu{ display: flex; }	.head{ display: grid; justify-content: normal; }	.logo{ display: flex; float:left; padding-top: 23px; z-index: 4; margin-right: 0px; padding-left: 16px;}	.logo-cursor{ margin-top: 1.5px; }	.title{ font-size: 28px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; margin: 0; color: #222; }	.subtitle{ font-size: 16px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: justify; margin: 0; padding-top: 25px; color: #222; }	li{ font-size: 16px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; margin: 0; padding-top: 5px; color: #222; }	hr{ background: #dcdcdc; border: none; height: 1px; }	.content{ padding-bottom: 50px; width: 80%; }}/*/ PARAMETRES PAR THEME /*/@media (prefers-color-scheme: light) {	body{ background-color: white;} }@media (prefers-color-scheme: dark) {	body{ background-color: #383838; }	.title,.subtitle,.menu-bouton2,.menu-bouton,.about-link,li{ color: white; }	.barre,.menu{ background: #2e2e2e; }	svg{ fill: white; }}
+/*/ POLICES /*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@font-face { font-family: 'Inter'; font-style:  normal; font-display: auto; font-weight: 400; src: url("../fonts/Inter-Regular.woff2") format("woff2"),url("../fonts/Inter-Regular.woff") format("woff"); }
+@font-face { font-family: 'Inter'; font-style:  italic; font-display: auto; font-weight: 400; src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("../fonts/Inter-Italic.woff") format("woff"); }
+@font-face { font-family: 'Inter'; font-style:  normal; font-display: auto; font-weight: 600; src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"); }
+@font-face { font-family: 'Inter'; font-style:  italic; font-display: auto; font-weight: 600; src: url("../fonts/Inter-MediumItalic.woff2") format("woff2"), url("../fonts/Inter-MediumItalic.woff") format("woff"); }
+@font-face { font-family: 'Inter'; font-style:  normal; font-display: auto; font-weight: 800; src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"); }
+@font-face { font-family: 'Inter'; font-style:  italic; font-display: auto; font-weight: 800; src: url("../fonts/Inter-BoldItalic.woff2") format("woff2"), url("../fonts/Inter-BoldItalic.woff") format("woff"); }
+
+/*/ ANIMATIONS /*/
+
+@keyframes slidein {
+  from{ transform: translate(-384px, 0px); }
+  to{ transform: translate(-84px, 0px); }
+}
+
+@keyframes slideout {
+  0%{ transform: translate(-84px, 0px); }
+  99%{ transform: translate(-384px, 0px); }
+  100%{ display: none; }
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@keyframes cursor {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/*/ PARAMETRES DE BASE POUR TOUT ECRAN /*/
+
+*{ scroll-behavior: smooth; scroll-margin: 80px; }
+body{ margin: 0px; padding: 0px; text-rendering: optimizeLegibility; }
+svg{ fill: black; }
+.menu{ padding-top: 23px; z-index: 4; }
+label,#toggle{ display: none; }
+label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; }
+.menu-bouton{ padding: 0 10px; font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; color: #222; text-decoration: none; border-radius: 3px; }
+.menu-bouton2{ font-size: 18px; font-family: monospace; color: #222; text-decoration: none; border-radius: 3px; font-weight: bold; }
+.menu-bouton:hover{ text-decoration: underline; }
+.barre{ position: fixed; width: 100%; height: 65px; background: #fafafa; z-index: 5; }
+.head{ display: flex; align-items: center; justify-content: center; }
+.logo{ padding-top: 21px; z-index: 4; margin-right: calc(25% - 9.9px); }
+.logo-cursor{ display: flex; float:right; margin-top: 2px; width: 10px; height: 1rem; background: red; margin-left: 7.5px; border-radius: 1px; animation: cursor 1s infinite; }
+.center{ padding-top: 110px; width: 100%; padding-left: 0; }
+.home-img{ width: 25px; padding: 0 15px;}
+.img{ display: flex; justify-content: center; align-items: center; float: center; padding-top: 20px;}
+.about-link{ font-size: 18px; text-decoration: underline; color: #222; }
+.title{ font-size: 35px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; margin: 0; color: #222; }
+.subtitle{ font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: justify; margin: 0; padding-top: 25px; color: #222; }
+li{ font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; margin: 0; padding-top: 5px; color: #222; }
+hr{ background: #dcdcdc; border: none; height: 1px; margin-top: 40px; }
+/*/.content{ padding-bottom: 50px; width: calc(190.3px + calc(25% - 11px) + 207px); }/*/
+.content{ padding-bottom: 50px; width: calc(175.84px + calc(25% - 9.9px) + 207px); }
+
+/*/ PARAMETRES POUR TELEPHONES OU TRES PETIT ECRAN #fafafa/*/
+
+@media all and (min-width: 1px) and (max-width: 575px){
+	.menu{ display: none; flex-direction: column; background: #fafafa; width: 150px; padding-bottom: 20px; text-align: center; padding-top: 20px; margin-left: calc(100vw - 150px); }
+	.menu-bouton{ font-size: 18px; padding-top: 10px; }
+	.menu-bouton:hover{ text-decoration: underline; }
+	label{ position: relative; display: flex; float: right; justify-content: center; align-items: center; margin-top: 21.5px; cursor: pointer; margin-right: 20px; z-index: 99; }
+	#toggle:checked ~ .head > .menu{ display: flex; }
+	.head{ display: grid; justify-content: normal; }
+	.logo{ display: flex; float:left; padding-top: 22px; z-index: 4; margin-right: 0px; padding-left: 16px;}
+	.logo-cursor{ margin-top: 1.5px; }
+	.title{ font-size: 28px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; margin: 0; color: #222; }
+	.subtitle{ font-size: 16px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: justify; margin: 0; padding-top: 25px; color: #222; }
+	li{ font-size: 16px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; margin: 0; padding-top: 5px; color: #222; }
+	hr{ background: #dcdcdc; border: none; height: 1px; }
+	.content{ padding-bottom: 50px; width: 80%; }
+}
+
+/*/ PARAMETRES PAR THEME /*/
+
+@media (prefers-color-scheme: light) {
+	body{ background-color: white;} 
+}
+
+@media (prefers-color-scheme: dark) {
+	body{ background-color: #383838; }
+	.title,.subtitle,.menu-bouton2,.menu-bouton,.about-link,li{ color: #CFCDCD; }
+	.barre,.menu{ background: #2e2e2e; }
+	svg{ fill: #CFCDCD; }
+}
