@@ -53,8 +53,10 @@ label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; 
 .img{ display: flex; justify-content: center; align-items: center; float: center; padding-top: 20px;}
 .post-link{ font-size: 18px; text-decoration: none; color: #222; }
 .title{ font-size: 35px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; margin: 0; color: #222; }
-.content-p{ font-size: 20px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: justify; margin: 0; color: #222; }
+.content-p{ font-size: 20px; clear: left; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: justify; margin: 0; color: #222; }
 .content-i{ float: left; margin: 0; width: 525px; }
+.sommaire{ text-decoration: none; color: #222; }
+.sommaire:hover{ text-decoration: underline; }
 .date-title{ font-size: 25px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; margin: 0; padding-top: 25px; padding-bottom: 25px; color: gray;}
 li{ font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; margin: 0; padding-top: 15px; color: #222; list-style: none; border-bottom: 1px grey dashed; padding-bottom: 15px; }
 hr{ background: #dcdcdc; border: none; height: 1px; margin-top: 40px; }
@@ -92,7 +94,7 @@ ul{ padding-left: 0px; }
 
 @media (prefers-color-scheme: dark) {
 	body{ background-color: #1F1F1F; }
-	.title,.subtitle,.menu-bouton2,.menu-bouton,.post-link,li,.content-p{ color: #CFCDCD; }
+	.title,.subtitle,.menu-bouton2,.menu-bouton,.post-link,li,.content-p,.sommaire{ color: #CFCDCD; }
 	.barre,.menu{ background: #252525; }
 	svg{ fill: #CFCDCD; }
 }
