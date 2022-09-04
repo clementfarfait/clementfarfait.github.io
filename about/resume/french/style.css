@@ -55,7 +55,7 @@ label{ -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; 
 .title{ font-size: 35px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; margin: 0; color: #222; }
 .subtitle{ font-size: 24px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; margin: 0; padding-top: 15px; color: #222; }
 li{ font-size: 18px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; margin: 0; padding-top: 5px; color: #222; }
-hr{ background: #dcdcdc; border: none; height: 1px; margin-top: 20px; }
+hr{ background: #dcdcdc; border: none; height: 1px; margin-top: 30px; }
 /*/.content{ padding-bottom: 50px; width: calc(190.3px + calc(25% - 11px) + 207px); }/*/
 .content{ padding-bottom: 50px; width: calc(175.84px + calc(25% - 9.9px) + 207px); }
 .head-resume{ margin-top: 20px; display: flex; align-items: center; }
@@ -68,7 +68,9 @@ hr{ background: #dcdcdc; border: none; height: 1px; margin-top: 20px; }
 .img-download{ display: none; width: 24px; }
 .body-resume{ display: flex; }
 .body-left{ float: left; width: 50%; }
-.body-right{ float: right; margin-left: auto; }
+.body-right{ float: right; margin-left: auto; width: 30%; }
+.body-100{ float: left; width: 100%; }
+.espace-resume{ display: flex; padding-top: 30px; width: 1px; height: 1px; }
 
 /*/ PARAMETRES POUR TELEPHONES OU TRES PETIT ECRAN #fafafa/*/
 
@@ -88,10 +90,12 @@ hr{ background: #dcdcdc; border: none; height: 1px; margin-top: 20px; }
 	.content{ padding-bottom: 50px; width: 80%; }
 	.img-resume{ width: 100px; border-radius: 50%; float: left; }
 	.head-txt{ font-size: 16px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; padding-left: 20px; text-align: left; color: #222; float: left; }
-	.txt-resume{ font-size: 16px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: left; color: #222; clear: left; }
+	.txt-resume{ font-size: 16px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif; text-align: justify; color: #222; clear: left; }
 	.download-button{ border: 1px solid; border-color: #222; padding-left: 5px; padding-right: 5px; border-radius: 10px; float: right; margin-left: auto; }
 	.inside-button{ display: none; }
 	.img-download{ position: relative; display: flex; float: right; }
+	.body-resume{ display: grid; }
+	.body-left,.body-right{ float: left; width: 100%; }
 }
 
 /*/ PARAMETRES PAR THEME /*/
